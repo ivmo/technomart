@@ -154,7 +154,7 @@ body {
 }
 
 .main-header {
-  padding-bottom: 60px;
+  padding: 0;
 
   background: #f1f5f7;
 }
@@ -163,10 +163,23 @@ body {
   margin-bottom: 60px;
 }
 
+.bg-container {
+  padding-bottom: 60px;
+  background: #f1f5f7;
+}
+
+.bg-container-article {
+padding-top: 67px;
+padding-bottom: 50px;
+background: #f2f6f8;
+}
+
 .top-header {
   min-height: 42px;
-  margin-bottom: 5px;
+  background: #293449;
+}
 
+.top-header-cont {
   background: #293449;
 }
 
@@ -228,7 +241,7 @@ body {
 
 .search {
   float: right;
-  width: 225px;
+  width: 228px;
   height: 42px;
   margin: 0;
   padding: 0;
@@ -275,7 +288,6 @@ input[type="search"]::-moz-input-placeholder {
   line-height: 18px;
   text-align: center;
   color: #ffffff;
-  text-transform: uppercase;
   text-decoration: none;
 
   background: #293449;
@@ -342,7 +354,8 @@ input[type="search"]::-moz-input-placeholder {
   width: 940px;
   min-height: 80px;
   margin: 0 auto;
-  padding: 42px 10px 30px 10px;
+  padding: 42px 0 30px 0;
+  background: #F1F5F7;
 }
 
 .info-header-col {
@@ -513,8 +526,8 @@ color: #c5c5c5;
 
 .main-menu {
   width: 940px;
-  margin: auto;
-  padding: 0 10px;
+  /*margin: auto;*/
+  /*padding: 0 10px;*/
 }
 
 .main-menu ul {
@@ -981,7 +994,6 @@ color: #c5c5c5;
 .item-discount {
   min-height: 20px;
   margin-bottom: 10px;
-
   font-weight: bold;
   font-family: "PT Sans", sans-serif;
   color: #999999;
@@ -1123,6 +1135,10 @@ color: #c5c5c5;
 }
 
 .service {
+  background: #f2f6f8;
+}
+
+.service-bg-container {
   padding-top: 64px;
 
   background: #f2f6f8;
@@ -1157,7 +1173,7 @@ color: #c5c5c5;
 .service-slider {
   position: relative;
 
-  height: 290px;
+  min-height: 290px;
 }
 
 .service-slider input[type="radio"] {
@@ -1184,7 +1200,7 @@ color: #c5c5c5;
   font-weight: bold;
   font-size: 21px;
   line-height: 30px;
-  font-family: "Cuprum", sans-serif;
+  font-family: "Cuprum", Arial, sans-serif;
   color: #ffffff;
 
   background: #32425c;
@@ -1222,9 +1238,8 @@ color: #c5c5c5;
 
   display: none;
   width: 380px;
-  height: 290px;
+  min-height: 290px;
   padding-right: 240px;
-  overflow: auto;
 }
 
 .service-slide:nth-child(1) {
@@ -1454,7 +1469,7 @@ color: #c5c5c5;
 }
 
 .cart-popup-message {
-  font-family: "Cuprum", sans-serif;
+  font-family: "Cuprum", Arial, sans-serif;
   font-weight: bold;
   font-size: 30px;
 }
@@ -1610,7 +1625,7 @@ color: #c5c5c5;
   text-transform: uppercase;
   background: #ee3643;
   border-radius: 3px;
-  font-family: "Cuprum", sans-serif;
+  font-family: "Cuprum", Arial, sans-serif;
   border: none;
   outline: none;
 }
@@ -2099,7 +2114,6 @@ input[type="radio"]:disabled + label:before {
 
 .mini-article {
   background: #f2f6f8;
-  padding: 67px 0 50px 0;
 }
 
 .mini-article-title {
@@ -2107,7 +2121,7 @@ input[type="radio"]:disabled + label:before {
   margin-bottom: 24px;
   font-size: 30px;
   line-height: 30px;
-  font-family: "Cuprum", sans-serif;
+  font-family: "Cuprum", Arial, sans-serif;
 }
 
 .mini-article-text {
@@ -2115,7 +2129,7 @@ input[type="radio"]:disabled + label:before {
   padding: 0;
   font-size: 13px;
   line-height: 30px;
-  font-family: "Cuprum", sans-serif;
+  font-family: "Cuprum", Arial, sans-serif;
   font-weight: bold;
 }
 /*end catalog*/
@@ -2126,12 +2140,12 @@ input[type="radio"]:disabled + label:before {
   font-size: 18px;
   line-height: 24px;
   color: #ffffff;
-
   background: #32425c;
 }
 
 .footer-top {
   padding-bottom: 37px;
+  background: #32425c;
 }
 
 .left-col {
@@ -2175,7 +2189,7 @@ input[type="radio"]:disabled + label:before {
 
 .footer-nav {
   display: inline-block;
-  margin-right: 59px;
+  margin-right: 57px;
 
   font-size: 18px;
   line-height: 24px;
@@ -2206,13 +2220,16 @@ input[type="radio"]:disabled + label:before {
 }
 
 .footer-bottom {
-  min-height: 75px;
-  padding-top: 35px;
-
   font-size: 16px;
   line-height: 18px;
 
   background: #293449;
+}
+
+.footer-bottom-bg {
+  min-height: 75px;
+  background: #293449;
+  padding-top: 35px;
 }
 
 .copyright {
